@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/welcomelyt"
+        android:background="@drawable/wave1"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/croissant"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droid_serif_bold"
+            android:textColor="@color/charcoal"
+            android:layout_margin="25dp"
+            android:text="Pantry Tracker"
+            android:textSize="35sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/loginTitleTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomelyt"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="15dp"
+        android:fontFamily="@font/droid_serif_bold"
+        android:gravity="center"
+        android:text="Accedi alla tua dispensa!"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/white"
+        android:textSize="25sp" />
+
+
+    <EditText
+        android:id="@+id/mailLoginEdit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/loginTitleTxt"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/cerchio2"
+        android:drawableStart="@drawable/ic_mail"
+        android:drawablePadding="4dp"
+        android:ems="10"
+        android:hint="Inserisci email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        android:textColorHint="#5A5A5A" />
+
+    <EditText
+        android:id="@+id/passwordLoginEdit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/mailLoginEdit"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:background="@drawable/cerchio2"
+        android:paddingStart="20dp"
+        android:drawablePadding="4dp"
+        android:ems="10"
+        android:hint="Inserisci password"
+        android:inputType="textPassword"
+        android:textColorHint="#5A5A5A" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordLoginEdit"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Ricorda"
+        android:textSize="18sp"
+        android:id="@+id/rememberMe"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rememberMe"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/pretty_lilla"
+        android:fontFamily="@font/droid_serif_bold"
+        android:insetTop="0dp"
+        android:text="Accedi"
+        android:textColor="@color/charcoal"
+        app:cornerRadius="100dp" />
+
+    <TextView
+        android:id="@+id/registerRedirTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginBtn"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Non hai un account? Registrati"
+        android:textSize="20sp" />
+
+
+
+</RelativeLayout>

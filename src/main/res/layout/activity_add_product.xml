@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProductActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/welcomelyt"
+        android:background="@drawable/wave1">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/croissant"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droid_serif_bold"
+            android:textColor="@color/charcoal"
+            android:layout_margin="25dp"
+            android:text="Pantry Tracker"
+            android:textSize="35sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/scroll"
+        android:layout_below="@+id/welcomelyt"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aggiungi le informazioni del prodotto"
+                android:id="@+id/addProdDescr"
+                android:textSize="20sp"
+                android:textAllCaps="true"
+                android:textColor="@color/charcoal"
+                android:fontFamily="@font/droid_serif_bold"
+                android:layout_marginBottom="60dp"/>
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/droid_serif_bold"
+                android:text="Nome"
+                android:textSize="18sp"
+                android:layout_below="@+id/addProdDescr"/>
+
+            <EditText
+                android:id="@+id/insName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginBottom="30dp"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/descr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/insName"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/droid_serif_bold"
+                android:text="Descrizione"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/insDescr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descr"
+                android:layout_marginBottom="30dp"
+                android:minHeight="48dp" />
+
+
+
+            <TextView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/insDescr"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/droid_serif_bold"
+                android:text="Link immagine"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/insImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:layout_marginBottom="30dp"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/prodCreation"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/insImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/droid_serif_bold"
+                android:backgroundTint="@color/pretty_lilla"
+                android:textColor="@color/charcoal"
+                app:cornerRadius="100dp"
+                android:text="Crea"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

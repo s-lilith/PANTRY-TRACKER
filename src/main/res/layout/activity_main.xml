@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/body_container"
+    tools:context=".MainActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/welcomelyt"
+        android:background="@drawable/wave1">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/croissant"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droid_serif_bold"
+            android:textColor="@color/charcoal"
+            android:layout_margin="25dp"
+            android:text="Pantry Tracker"
+            android:textSize="35sp" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/addProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomelyt"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/droid_serif_bold"
+        android:backgroundTint="@color/pretty_lilla"
+        android:textColor="@color/charcoal"
+        app:cornerRadius="100dp"
+        android:text="aggiungi prodotto" />
+
+   <GridLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/addProduct"
+       android:layout_above="@+id/bottomNav"
+       android:layout_marginTop="20dp"
+       android:layout_marginHorizontal="10dp"
+       android:columnCount="2"
+       android:rowCount="2">
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/card1"
+           android:layout_gravity="fill"
+           android:layout_columnWeight="1"
+           android:layout_rowWeight="1"
+           android:layout_row="0"
+           android:layout_column="0"
+           app:cardCornerRadius="8dp"
+           app:cardElevation="8dp"
+           app:cardUseCompatPadding="true">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal|center_vertical"
+               android:gravity="center"
+               android:orientation="vertical">
+               <ImageView
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:id="@+id/suggestedPic1"
+                   tools:srcCompat="@tools:sample/avatars"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/suggestedTitle1"
+                   android:textStyle="bold"
+                   android:textSize="16sp"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/suggestedBarcode1"
+                   android:textSize="14sp"/>
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/card2"
+           android:layout_gravity="fill"
+           android:layout_columnWeight="1"
+           android:layout_rowWeight="1"
+           android:layout_row="0"
+           android:layout_column="1"
+           app:cardCornerRadius="8dp"
+           app:cardElevation="8dp"
+           app:cardUseCompatPadding="true">
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal|center_vertical"
+           android:gravity="center"
+           android:orientation="vertical">
+           <ImageView
+               android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:id="@+id/suggestedPic2"
+               tools:srcCompat="@tools:sample/avatars"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/suggestedTitle2"
+               android:textStyle="bold"
+               android:textSize="16sp"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/suggestedBarcode2"
+               android:textSize="14sp"/>
+       </LinearLayout>
+
+   </androidx.cardview.widget.CardView>
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/card3"
+           android:layout_gravity="fill"
+           android:layout_columnWeight="1"
+           android:layout_rowWeight="1"
+           android:layout_row="1"
+           android:layout_column="0"
+           app:cardCornerRadius="8dp"
+           app:cardElevation="8dp"
+           app:cardUseCompatPadding="true">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal|center_vertical"
+               android:gravity="center"
+               android:orientation="vertical">
+               <ImageView
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:id="@+id/suggestedPic3"
+                   tools:srcCompat="@tools:sample/avatars"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/suggestedTitle3"
+                   android:textStyle="bold"
+                   android:textSize="16sp"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/suggestedBarcode3"
+                   android:textSize="14sp"/>
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/card4"
+           android:layout_gravity="fill"
+           android:layout_columnWeight="1"
+           android:layout_rowWeight="1"
+           android:layout_row="1"
+           android:layout_column="1"
+           app:cardCornerRadius="8dp"
+           app:cardElevation="8dp"
+           app:cardUseCompatPadding="true">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal|center_vertical"
+               android:gravity="center"
+               android:orientation="vertical">
+               <ImageView
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:id="@+id/suggestedPic4"
+                   tools:srcCompat="@tools:sample/avatars"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/suggestedTitle4"
+                   android:textStyle="bold"
+                   android:textSize="16sp"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/suggestedBarcode4"
+                   android:textSize="14sp"/>
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+
+   </GridLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation_menu" />
+
+
+
+</RelativeLayout>

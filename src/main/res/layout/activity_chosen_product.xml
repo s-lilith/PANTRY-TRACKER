@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChosenProductActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/welcomelyt"
+        android:background="@drawable/wave1">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/croissant"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droid_serif_bold"
+            android:textColor="@color/charcoal"
+            android:layout_margin="25dp"
+            android:text="Pantry Tracker"
+            android:textSize="35sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/productPicture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/welcomelyt"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/prodName"
+        android:layout_below="@+id/productPicture"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/prodDescTitle"
+        android:layout_below="@+id/prodName"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Descrizione: "
+        android:layout_marginVertical="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/prodDesc"
+        android:layout_below="@+id/prodDescTitle"
+        android:textSize="17sp"
+        android:layout_marginHorizontal="20dp"
+        android:text=""
+        android:layout_marginVertical="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnLyt"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_below="@+id/prodDesc">
+
+        <Button
+            android:id="@+id/addToPantry"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@color/pretty_lilla"
+            android:fontFamily="@font/droid_serif_bold"
+            android:textColor="@color/charcoal"
+            android:text="aggiungi a dispensa"
+            app:cornerRadius="100dp" />
+
+        <Button
+            android:id="@+id/vote"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/droid_serif_bold"
+            android:backgroundTint="@color/pretty_lilla"
+            android:textColor="@color/charcoal"
+            app:cornerRadius="100dp"
+            android:text="dai un voto"
+            />
+
+        <Button
+            android:id="@+id/deleteProd"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/vote"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/droid_serif_bold"
+            android:backgroundTint="@color/charcoal"
+            android:textColor="@color/pretty_lilla"
+            android:text="elimina prodotto"
+            app:cornerRadius="100dp"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

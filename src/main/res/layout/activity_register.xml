@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/welcomelyt"
+        android:background="@drawable/wave1"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/croissant"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droid_serif_bold"
+            android:textColor="@color/charcoal"
+            android:layout_margin="25dp"
+            android:text="Pantry Tracker"
+            android:textSize="35sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/registerTitleTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomelyt"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/droid_serif_bold"
+        android:gravity="center"
+        android:text="Registrati!"
+        android:textColor="@color/charcoal"
+        android:textColorHighlight="@color/white"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/nameRegisterEdit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/registerTitleTxt"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:paddingStart="20dp"
+        android:background="@drawable/cerchio2"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="4dp"
+        android:ems="10"
+        android:hint="Inserisci username"
+        android:inputType="textPersonName"
+        android:textColorHint="#5A5A5A" />
+
+    <EditText
+        android:id="@+id/mailRegisterEdit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/nameRegisterEdit"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:paddingStart="20dp"
+        android:background="@drawable/cerchio2"
+        android:drawableStart="@drawable/ic_mail"
+        android:drawablePadding="4dp"
+        android:ems="10"
+        android:hint="Inserisci email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#5A5A5A" />
+
+    <EditText
+        android:id="@+id/passwordRegisterEdit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/mailRegisterEdit"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:paddingStart="20dp"
+        android:background="@drawable/cerchio2"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="4dp"
+        android:ems="10"
+        android:hint="Inserisci password"
+        android:inputType="textPassword"
+        android:textColorHint="#5A5A5A" />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordRegisterEdit"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/pretty_lilla"
+        android:fontFamily="@font/droid_serif_bold"
+        android:insetTop="0dp"
+        android:text="Registrati"
+        android:textColor="@color/charcoal"
+        app:cornerRadius="100dp" />
+
+    <TextView
+        android:id="@+id/loginRedirTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerBtn"
+        android:layout_marginTop="20dp"
+        android:elegantTextHeight="false"
+        android:gravity="center"
+        android:text="Hai già un account? Accedi"
+        android:textColorHint="#000000"
+        android:textSize="20sp" />
+
+
+
+
+</RelativeLayout>
